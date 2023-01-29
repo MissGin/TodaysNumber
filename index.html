@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <main>
+        <div class="container py-4">
+            
+          <div class="p-5 mb-4 text-bg-dark border rounded-3">
+            <div class="container-fluid  py-5">
+              <h1 class="display-5 fw-bold">Number of the Day</h1>
+              <p class="col-md-8 fs-4">Each day we bring you a new randomized number.</p>
+              
+            </div>
+          </div>
+          <div class="b-example-divider"></div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Today's number is <span id='number'><mark>___</mark></span>.</h2>
+    <h3 >These are some of the ways the number is expressed.</h3>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-robot"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Nominal</h3>
+          <p class="lead" id="nominal"></p> 
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-postage-heart"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Cardinal</h3>
+          <p class="lead" id="cardinal"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-flower1"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Ordinal</h3>
+          <p class="lead" id="ordinal"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-rocket"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Roman numerals</h3>
+          <p class="lead" id="Roman"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-sunrise"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Egyptian numerals</h3>
+          <p class="lead" id="egyptian"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-table"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Chinese numerals</h3>
+          <p class="lead" id="chinese"></p>
+          
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-signpost-2"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Number reversed</h3>
+          <p class="lead" id="reversed"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-plus-square"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Sum of the digits</h3>
+          <p class="lead" id="digitssum"></p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <i class="bi bi-postcard"></i>
+        </div>
+        <div>
+          <h3 class="fs-2">Number of digits</h3>
+          <p class="lead" id="noofdigits"></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+      
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="cartoon-math.avif" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Math trivia</h5>
+                          <p class="card-text" id="p"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="mathematics-student-concept_1284-4957.avif" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">More math trivia</h5>
+                          <p class="card-text" id="p2"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+          
+
+          <footer class="pt-3 mt-4 text-muted border-top">
+            &copy; 2023
+          </footer>
+        </div>
+      </main>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
